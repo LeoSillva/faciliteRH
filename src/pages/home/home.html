@@ -1,14 +1,97 @@
 <ion-header>
   <ion-navbar>
     <ion-title>
-      Ionic Blank
+      Facilite RH
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+
+<ion-content padding class="colorHome">
+  <h3 class="tituloh3">Bem vindo ao seu RH</h3>
+
+  <!-- Cartão de conteudo -->
+
+  <!-- <div padding>
+    <ion-segment [(ngModel)]="pet">
+      <ion-segment-button value="kittens">
+        Kittens
+      </ion-segment-button>
+      <ion-segment-button value="puppies">
+        Puppies
+      </ion-segment-button>
+      <ion-segment-button value="teste">
+        Teste
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+  
+  <div [ngSwitch]="pet">
+    <ion-list *ngSwitchCase="'puppies'">
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="img/thumbnail-puppy-1.jpg">
+        </ion-thumbnail>
+        <h2>Ruby</h2>
+      </ion-item>
+      ...
+    </ion-list>
+  
+    <ion-list *ngSwitchCase="'kittens'">
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="img/thumbnail-kitten-1.jpg">
+        </ion-thumbnail>
+        <h2>Luna</h2>
+      </ion-item>
+      ...
+    </ion-list>
+  </div> -->
+
+  <!-- <button  ion-button block>ADMISSÃO</button>
+  <button  ion-button block>COMPENSAÇÃO</button>
+  <button  ion-button block>DEMISSÃO</button>
+
+  adicinar page col-emp-adm
+  adicionar interatividade 
+  criar demais telas usando navigation -->
+
+  <div padding>
+    <ion-segment [(ngModel)]="menuprincipal">
+
+      <ion-segment-button value="menuadm">
+        ADMISSÃO
+      </ion-segment-button>
+      
+      <ion-segment-button value="menudem">
+        DEMISSÃO
+      </ion-segment-button>
+
+      <ion-segment-button value="menudcomp" class="buttonHome">
+        COMPENSAÇÃO
+      </ion-segment-button>
+
+    </ion-segment>
+  </div>
+  
+  <div [ngSwitch]="menuprincipal">
+
+    <ion-list *ngSwitchCase="'menudem'">
+      <button  ion-button block >COLABORADOR</button>
+      <button  ion-button block>EMPREGADOR</button>
+    </ion-list>
+  
+    <ion-list *ngSwitchCase="'menuadm'">
+      <button  ion-button block (click)="openColAdm()">COLABORADOR</button>
+      <button  ion-button block>EMPREGADOR</button>
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'menudcomp'">
+      <button  ion-button block>COLABORADOR</button>
+      <button  ion-button block>EMPREGADOR</button>
+    </ion-list>
+
+  </div>
+
 </ion-content>
+
