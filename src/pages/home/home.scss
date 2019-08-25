@@ -6,6 +6,13 @@ page-home {
     text-align: center;
 }
 
+
 .buttonHome{
     -webkit-text-size-adjust: auto;
+}
+
+.bg-class{
+    background: #fceabb; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #fceabb, #f8b500); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #fceabb, #f8b500); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
