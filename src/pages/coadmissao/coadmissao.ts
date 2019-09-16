@@ -17,5 +17,5 @@ export class CoadmissaoPage {
     console.log('ionViewDidLoad CoadmissaoPage');
   }
 
-
 }
+

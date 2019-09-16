@@ -1,12 +1,28 @@
 <ion-header>
-
   <ion-navbar>
-    <ion-title> Visão do Colaborador</ion-title>
+    <ion-title>Manual do Colaborador</ion-title>
   </ion-navbar>
-
 </ion-header>
 
-
 <ion-content padding class="bg-class">
-  
-</ion-content>
+
+  <ion-list>
+     <!-- <ion-list-header>
+      Hobbits
+    </ion-list-header>  -->
+    <a ion-item (click)="openModal({charNum: 0})" class="bg-class">
+      Recrutamento 
+    </a>
+    <a ion-item (click)="openModal({charNum: 1})" class="bg-class">
+      Seleção e entrevista
+    </a>
+    <a ion-item (click)="openModal({charNum: 2})" class="bg-class">
+      Formas de contratação
+    </a>
+    <a ion-item (click)="openModal({charNum: 2})" class="bg-class">
+      Documentos essenciais para contratação
+    </a>
+  </ion-list>
+
+</ion-content> 
+
