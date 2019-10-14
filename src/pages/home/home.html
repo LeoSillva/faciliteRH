@@ -32,18 +32,18 @@
   <div [ngSwitch]="menuprincipal">
 
     <ion-list *ngSwitchCase="'menudem'">
-      <button  ion-button block >COLABORADOR</button>
-      <button  ion-button block>EMPREGADOR</button>
+      <button  ion-button block round>COLABORADOR</button>
+      <button  ion-button block round>EMPREGADOR</button>
     </ion-list>
   
     <ion-list *ngSwitchCase="'menuadm'">
-      <button  ion-button block (click)="openColAdm()">COLABORADOR</button>
-      <button  ion-button block>EMPREGADOR</button>
+      <button  ion-button block round (click)="openColAdm()">COLABORADOR</button>
+      <button  ion-button block round>EMPREGADOR</button>
     </ion-list>
 
     <ion-list *ngSwitchCase="'menudcomp'">
-      <button  ion-button block>COLABORADOR</button>
-      <button  ion-button block>EMPREGADOR</button>
+      <button  ion-button block round>COLABORADOR</button>
+      <button  ion-button block round>EMPREGADOR</button>
     </ion-list>
 
   </div>
